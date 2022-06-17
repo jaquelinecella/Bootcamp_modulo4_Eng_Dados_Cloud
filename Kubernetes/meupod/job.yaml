@@ -9,6 +9,6 @@ spec:
     spec:
       containers:
       - name: readshow
-        image: neylsoncrepalde/exemplo_job:v3
+        image: neylsoncrepalde/exemplo_job:v4_amd
         command: ["python", "/run.py"]
       restartPolicy: Never
