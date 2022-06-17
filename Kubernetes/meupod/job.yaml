@@ -13,7 +13,7 @@ spec:
         env:
           - name: MINHA_VAR
             valueFrom:
-              ConfigMapKeyRef:
+              configMapKeyRef:
                 name: ambiente
                 key: minha_var 
         command: ["python", "-c", "import os; print(os.environ['MINHA_VAR'])"]
