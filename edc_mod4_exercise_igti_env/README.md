@@ -1,5 +1,3 @@
-# edc_mod4_exercise_igti_env
+# Módulo 4- Docker e Kubernetes
 
-Project started in June 11, 2022.
-
-**Please, complete here information on using and testing this project.**
+Práticas com Docker e Kubernetes realizadas em sala de aula. Utilizadas plataformas AWS e GCP.
