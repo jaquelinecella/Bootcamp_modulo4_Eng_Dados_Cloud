@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: readpandas
+spec:
+  backoffLimit: 3
+  activeDeadlineSeconds: 60
+  template:
+    spec:
+      containers:
+      - name: readshow
+        image: neylsoncrepalde/exemplo_job:v3
+        command: ["python", "/run.py"]
+      restartPolicy: Never
