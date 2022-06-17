@@ -10,5 +10,11 @@ spec:
       containers:
       - name: readshow
         image: neylsoncrepalde/exemplo_job:v4_amd
-        command: ["python", "/run.py"]
+        env:
+          - name: MINHA_VAR
+            valueFrom:
+              ConfigMapKeyRef:
+                name: ambiente
+                key: minha_var 
+        command: ["python", "-c", "import os; print(os.environ['MINHA_VAR'])"]
       restartPolicy: Never
