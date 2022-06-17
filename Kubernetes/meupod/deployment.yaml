@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 3
   selector: 
-    macthlabels:
+    matchLabels:
       app: meunginx
   template: 
     metadata: 
@@ -16,7 +16,7 @@ spec:
     spec: 
       containers:
       - name: webserver
-        image: nginx: 1.14.2
+        image: nginx:1.14.2
         ports:
-        - containersPort: 80
-        
+        - containerPort: 80
+
