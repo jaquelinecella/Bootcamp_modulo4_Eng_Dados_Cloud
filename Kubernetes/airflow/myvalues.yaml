@@ -1574,7 +1574,7 @@ dags:
     # git@github.com:apache/airflow.git
     # https example: https://github.com/apache/airflow.git
     repo: https://github.com/jaquelinecella/Bootcamp_modulo4_Eng_Dados_Cloud.git
-    branch: main
+    branch: dev
     rev: HEAD
     depth: 1
     # the number of consecutive failures allowed before aborting
