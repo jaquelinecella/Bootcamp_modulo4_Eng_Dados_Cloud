@@ -236,12 +236,12 @@ executor: "KubernetesExecutor"
 allowPodLaunching: true
 
 # Environment variables for all airflow containers
-env: []
- - name: "AIRFLOW_CORE_REMOTE_LOGGING"
-   value: "TRUE"
- - name: "AIRFLOW_LOGGING_REMOTE_BASE_LOG_FOLDER"
+env: 
+ - name: AIRFLOW__CORE__REMOTE_LOGGING
+   value: 'True'
+ - name: AIRFLOW__LOGGING__REMOTE_BASE_LOG_FOLDER
    value: "s3://bucket-praticas-desafio4/airflow-logs/" 
- - name: AIRFLOW_LOGGING_REMOTE_LOG_CONN_ID
+ - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
    value: "my_aws"  
 # Secrets for all airflow containers
 secret: []
