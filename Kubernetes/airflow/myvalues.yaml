@@ -243,6 +243,7 @@ env:
      value: "s3://datalake-jaque-igti-edc/airflow-logs/"
    - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
      value: "my_aws"  
+     #Corrigido erro. Logs chegando no S3.
 
 # Secrets for all airflow containers
 secret: []
